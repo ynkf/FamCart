@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Email:</ion-label>
+    <ion-input type="email" [(ngModel)]="user.email" placeholder="email@gmail.com"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label>Passwort:</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"  placeholder="Passwort"></ion-input>
+  </ion-item>
+    
+  <ion-button class="link-btn" fill="clear" (click)="register()">registrieren</ion-button>
+  <ion-button (click)="login(user)">Login</ion-button>   
+</ion-content>
